@@ -13,3 +13,4 @@ import models.subtypes.Herbivorous;
 
 public class Hippopotamous extends Herbivorous{
 }
+
