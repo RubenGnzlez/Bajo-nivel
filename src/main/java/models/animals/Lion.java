@@ -1,15 +1,25 @@
 package models.animals;
 
+import models.interfaces.Consumidor;
 import models.subtypes.Carnivorous;
 
-/**
- * Model that represents an {@code animals.Deer},this animals feeds on meat.
- * @author Ruben arturo Gonzalez
- * @see models.Herbivorous
- * @since 1.0
- * @version 1.0
 
- */
 
-public class Lion extends Carnivorous{
+public class Lion extends Carnivorous implements Consumidor{
+
+    private Boolean melena;
+
+    public Lion() {
+        this.melena = Boolean.TRUE;
+    }
+
+    @Override
+    public void Comer() {
+        System.out.println("guuuuuuur");
+    }
+
+    @Override
+    public String hablar(String leng, Integer dialecto) {
+        return null;
+    }
 }

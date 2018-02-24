@@ -1,5 +1,6 @@
 package models.animals;
 
+import models.interfaces.Consumidor;
 import models.subtypes.Herbivorous;
 
 /**
@@ -11,6 +12,21 @@ import models.subtypes.Herbivorous;
 
  */
 
-public class Hippopotamous extends Herbivorous{
+public class Hippopotamous extends Herbivorous implements Consumidor{
+
+    public Hippopotamous() {
+    }
+
+    @Override
+    public void Comer() {
+        System.out.println("muuuu");
+    }
+
+    @Override
+    public String hablar(String leng, Integer dialecto) {
+        return null;
+    }
+
+
 }
 

@@ -12,4 +12,6 @@ import models.subtypes.Carnivorous;
  */
 
 public class Owl extends Carnivorous {
+    public Owl() {
+    }
 }

@@ -12,4 +12,6 @@ import models.subtypes.Carnivorous;
  */
 
 public class Monkey extends Carnivorous{
+    public Monkey() {
+    }
 }

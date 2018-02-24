@@ -1,5 +1,6 @@
 package models.animals;
 
+import models.enums.TypeHerviborous;
 import models.subtypes.Herbivorous;
 /**
  * Model that represents an {@code animals.Deer},this animals feeds on meat.
@@ -12,4 +13,14 @@ import models.subtypes.Herbivorous;
 
 
 public class Deer extends Herbivorous {
+    private Double longCuernos;
+    private Boolean cuernos;
+    private Boolean extinto;
+
+
+    public Deer() {
+        this.extinto = Boolean.FALSE;
+        this.setTypeHerviborous(TypeHerviborous.GRANIVOROUS);
+    }
+
 }

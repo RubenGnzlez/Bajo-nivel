@@ -1,6 +1,7 @@
 package models.subtypes;
 
 import models.Animal;
+import models.enums.TypeHerviborous;
 
 /**
  * Model that represents an {@code models.Animal},this animals doesnt feed on meat.
@@ -12,4 +13,18 @@ import models.Animal;
  */
 
 public class Herbivorous extends Animal{
+    private TypeHerviborous typeHerviborous;
+
+    public Herbivorous() {
+
+        this.setTypeHerviborous(TypeHerviborous.XILOFAGOUS);
+    }
+
+    public TypeHerviborous getTypeHerviborous() {
+        return typeHerviborous;
+    }
+
+    public void setTypeHerviborous(TypeHerviborous typeHerviborous) {
+        this.typeHerviborous = typeHerviborous;
+    }
 }

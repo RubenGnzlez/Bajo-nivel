@@ -12,4 +12,12 @@ import models.subtypes.Herbivorous;
  */
 
 public class Giraffe extends Herbivorous {
+    private Boolean manchasRegulares;
+    private Double longCuello;
+
+    public Giraffe() {
+        this.manchasRegulares =  Boolean.FALSE;
+        this.longCuello =  300d;
+
+    }
 }
